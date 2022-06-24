@@ -1,19 +1,19 @@
 
-<template>
-  <h1/>
-  <li>
-     dfgdfgdfg
-     dfgdfgdfgdfgdfg
-     dfgdfg
-  </li>
+<template lang="">
+  <div>
+     <h1 v-model="title">    
+  </div>
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      title: "description"
+    }
+  },
 }
 </script>
-
-<style>
-
+<style lang="">
+  
 </style>
