@@ -2,15 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Headers" content="*">
+    <meta http-equiv="Content-Security-Policy" content=" ">
+    <meta http-equiv="Access-Control-Allow-Origin" content=" ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Vue3</title>
-    <script src  = "https://unpkg.com/vue@next"></script>
-    <script type="module" src =  "main.js"></script>
 </head>
 <body>
-    <div id = "app">
+
+    <div id="app">
+     
     </div>
-</body>
+    <script src = "https://unpkg.com/vue@3">
+
+    </script>
+
+  </body>
 
 </html>
+
+
+<script>
+    
+    const App1 = Vue.createApp
+    
+    App1({
+        data() {
+            return {
+                message: "Hello world!!!"
+            }
+        },
+        template: '<div> {{message}} it is message </div>'
+        }
+
+    ).mount('#app')
+
+</script>
+
+
+
+
