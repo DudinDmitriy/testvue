@@ -1,0 +1,22 @@
+{
+  "name": "testvue",
+  "version": "1.0.0",
+  "description": "Test Vue 3 API",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DudinDmitriy/TestVue.git"
+  },
+  "keywords": [
+    "Vue"
+  ],
+  "author": "DudinD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DudinDmitriy/TestVue/issues"
+  },
+  "homepage": "https://github.com/DudinDmitriy/TestVue#readme"
+}
