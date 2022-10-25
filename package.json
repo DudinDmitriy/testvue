@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "Test Vue 3 API",
   "main": "main.js",
-  "module": "main.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

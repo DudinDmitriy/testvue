@@ -7,13 +7,16 @@
     <meta http-equiv="Access-Control-Allow-Origin" content=" ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "https://unpkg.com/vue@3"> </script>
-
+    <script type="importmap">
+        { "imports": {
+          "vue":               "https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.41/vue.esm-browser.prod.js"
+        } }
+     </script>    
+     <script type = "module" src = './main.js'> </script>
     <title>Test Vue3</title>
 </head>
 <body>
 
-    <script type = "module" src = ./main.js > </script>
 
     <head> Заголовок </head>
 
@@ -26,24 +29,6 @@
 
 </html>
 
-
-<!-- <script>
-    
-    const App1 = Vue.createApp
-    
-    App1({
-        data() {
-            return {
-                message: "Hello world!!! 34534534"
-            }
-        },
-        template: "<div> {{message}} it is message </div> <h1> sdfsdf </h1> "
-        
-        }
-
-    ).mount('#app')
-
-</script> -->
 
 
 
