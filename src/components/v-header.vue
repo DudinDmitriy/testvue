@@ -1,5 +1,7 @@
 <template>
-    <p> User: {{nameUser}} , number of good: {{sumGoods}} price: {{sumOrder}} </p>
+    <div>
+        <p class='user_header'> User: {{nameUser}} , number of good: {{numberGoods}} price: {{priceOrder}} </p>
+    </div>
  </template>
 
 <script>
@@ -13,14 +15,14 @@ export default {
         }
 
     },
-    sumGoods: {
-        type: Number,
+    numberGoods: {
+        type: String,
         default(){
-            return 0
+            return ' 0th '
         }
 
     },
-    sumOrder: {
+    priceOrder: {
         type: Number,
         default(){
             return 0
@@ -31,5 +33,7 @@ export default {
 </script>
 
 <style>
-
+  .user_header{
+     width: 50%;
+  }
 </style>

@@ -1,9 +1,9 @@
 
 <template>
   <vHeader
-   nameUser=Usr1
-   sumGoods=5
-   sumOrder=676.342
+   nameUser = 'Usr1'
+   numberGoods = 'sdfsdf'
+   :priceOrder = "priceOrder"
   />
   <p>-----------------------</p>
   <vCatalog/>  
@@ -18,6 +18,11 @@ export default {
 components:{
     vHeader,
     vCatalog
+},
+data(){
+  return {
+    priceOrder:100
+  }
 }
 }
 </script>
