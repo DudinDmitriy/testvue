@@ -35,8 +35,8 @@
 </template>
 
 <script>
-import vHeader from './components/v-header.vue'
-import vCatalog from './components/v-catalog.vue'
+import vHeader from './components/v-header.vue';
+import vCatalog from './components/v-catalog.vue';
 
 export default {
 
@@ -49,6 +49,8 @@ export default {
     priceOrder:100
     }
   },
+  
+    
   methods:{
     checkType(){
       console.log(typeof(this.priceOrder))
