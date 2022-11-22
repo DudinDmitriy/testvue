@@ -39,7 +39,6 @@ import vHeader from './components/v-header.vue';
 import vCatalog from './components/v-catalog.vue';
 
 export default {
-
   components:{
     vHeader,
     vCatalog

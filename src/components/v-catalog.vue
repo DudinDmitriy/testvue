@@ -10,7 +10,7 @@
 import {mapGetters} from "vuex";
 
 export default {
-  computed: mapGetters("allGoods"),
+  computed: mapGetters(["allGoods"]),
   async mounted() {
      this.$store.dispatch("loadGoods")
   }

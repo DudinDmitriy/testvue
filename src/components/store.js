@@ -1,11 +1,11 @@
-import vue  from 'Vue'
-import Vuex from 'Vuex'
+import Vue  from 'vue'
+import Vuex from 'vuex'
 
-vue.use(Vuex)
+Vue.use(Vuex)
 
 export default new Vuex.store({
   state:{
-    listCart: [],
+  
     listGood: []
   },
   action:{
@@ -30,7 +30,7 @@ export default new Vuex.store({
     { id: 4,
       name: "435345dfgdf",
       price:999
-    },
+    }
   ];
   ctx.commit('setGood',goods);
 
@@ -39,14 +39,14 @@ export default new Vuex.store({
 
  mutation:{
   setGood(state,goods) {
-    state.listgood = goods;
+    state.listGood = goods;
   }
 
  },
  getters:{
   
-  allGoods(state){
-    return state.listGood
+  allGoods(state) {
+    return state.listGood;
   }
 
  }
