@@ -8,5 +8,4 @@ const app = new Vue({
   render: h => h(App), 
   store
 })
-app.use(store)
 app.$mount('#app')

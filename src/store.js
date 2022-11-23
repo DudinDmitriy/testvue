@@ -3,13 +3,12 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.store({
+export default new Vuex.Store({
   state:{
-  
-    listGood: []
+      listGood: []
   },
   action:{
-    loadGoods(ctx){
+    LoadGoods(ctx){
       //... прочитать данные из файла
 //      let reader = new FileReader();
 //      reader.readAsText("./storeGoods.txt")
@@ -38,14 +37,14 @@ export default new Vuex.store({
  },
 
  mutation:{
-  setGood(state,goods) {
+  SetGood(state,goods) {
     state.listGood = goods;
   }
 
  },
  getters:{
   
-  allGoods(state) {
+  AllGoods(state) {
     return state.listGood;
   }
 
