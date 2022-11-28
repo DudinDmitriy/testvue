@@ -1,76 +1,41 @@
 
 <template>
-  <vHeader
-   nameUser = 'Usr1'
-   numberGoods = 'sdfsdf'
-   :priceOrder = priceOrder
-  />
   <p>-----------------------</p>
-  <vCatalog/>  
-  
-  <input 
-  type = "number"
-  v-model="priceOrder" />
-  
-  <button
-    v-on:click = "checkType">
-    check type
-  </button>
-  <div>{{priceOrder}}</div>
   <div>
-    <table class = "ahead">
-      <th class="ahead_category">
-        Category 
-      </th>
-      <th class="ahead_user">
-        User   
-      </th>
-      <th class = "ahead_card">
-        Card
-      </th>
-    </table>
-  </div>
-
+   {{this.$store.state.totalcount}}
+  </div>  
+  <v-catalog />
+  
+  
 
 </template>
 
 <script>
-import vHeader from './components/v-header.vue';
-import vCatalog from './components/v-catalog.vue';
 
+import VCatalog from './components/v-catalog'
 export default {
-  components:{
-    vHeader,
-    vCatalog
-  },
   data(){
-  return {
-    priceOrder:100
+    return {
+      count: 5
     }
   },
-  
-    
-  methods:{
-    checkType(){
-      console.log(typeof(this.priceOrder))
-    }
+  components: {VCatalog},
+  mounted() {
+    this.$store.state.Goods = [
+      {name: 'Good1',
+       price: 100,
+       id:1},
+      {name: 'Good2',
+       id:2},
+      {name: 'Good3',
+       id:3},
+      {name: 'Good4',
+       id:4},
+      {name: 'Good5',
+       id:5}
+    ]
   }
+    
 }
 </script>
 
-<style>
-  .ahead{
-    border: 2px solid black;
-    width: 100%;
-  }
-  .ahead.ahead_category{
-    width: 66%;
-  }
-
-  .ahead.ahead_user{
-    width: 66%;
-  }
-  .ahead_card{
-    width: 66%;
-  }
-</style>

@@ -1,24 +1,26 @@
 <template>
- <div v-for="good in allGoods" :key="good.id">  
-    <h1> {{good.name}} price: {{ good.price}}</h1> 
-    <p></p> 
- </div> 
-
+<div class="CatalogItems">
+<v-item-cart v-for="good in this.$store.state.Goods" 
+  :key="good.id"
+  :NameItem="good.name"
+  :PriceItem="good.price" 
+  />
+</div>
 </template>
 
 <script>
-import {mapGetters} from "vuex";
+import vItemCart from './v-ItemCart.vue'
 
 export default {
-  computed: mapGetters(["AllGoods"]),
-  async mounted() {
-     this.$store.dispatch("LoadGoods")
-  }
+  components: { vItemCart },
 
 }
 
 </script>
 
 <style>
-
+ .CatalogItems{
+   display: flex;
+   flex-wrap: wrap;
+ }
 </style>
