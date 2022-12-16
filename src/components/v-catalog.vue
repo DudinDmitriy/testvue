@@ -20,7 +20,8 @@ export default {
 
 <style>
  .CatalogItems{
-   display: flex;
-   flex-wrap: wrap;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,200px);
+   
  }
 </style>

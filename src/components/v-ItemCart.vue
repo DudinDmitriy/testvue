@@ -32,7 +32,7 @@ export default {
 
 <style>
  .ItemCart{
-    width: 30%;
+    width: 100%;
     border: 2px solid darkblue;
     margin: 10px;
     
