@@ -14,10 +14,10 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 
-import VCatalog from './components/v-catalog'
-import VHeader from './components/v-header'
+import VCatalog from './components/v-catalog.vue'
+import VHeader from './components/v-header.vue'
 
 export default {
   data(){

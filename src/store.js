@@ -1,10 +1,11 @@
-import Vuex from 'vuex'
 
+import Vuex from 'vuex'
+import GoodStore from './models/GoodModel.ts'
 
 const store = new Vuex.Store({
   state:{
       totalcount: 5,
-      Goods:[]
+      goods: []  as GoodStore[]
   },
  getters:{
 
