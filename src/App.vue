@@ -1,25 +1,31 @@
 
 <template>
-  <p>-----------------------</p>
-  <div>
-   {{this.$store.state.totalcount}}
-  </div>  
-  <v-catalog />
-  
-  
+  <div class="box">
+    <div class="header">
+      <v-header>
 
+      </v-header> 
+    </div>
+    <div class="catalog">
+      <v-catalog>
+
+      </v-catalog >
+    </div> 
+  </div>
 </template>
 
 <script>
 
 import VCatalog from './components/v-catalog'
+import VHeader from './components/v-header'
+
 export default {
   data(){
     return {
       count: 5
     }
   },
-  components: {VCatalog},
+  components: {VCatalog,VHeader},
   mounted() {
     this.$store.state.Goods = [
       {name: 'Good1',
@@ -43,3 +49,9 @@ export default {
 }
 </script>
 
+<style>
+  box{
+    display: grid;
+    grid-area: auto;
+  }
+</style>
